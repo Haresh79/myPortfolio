@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    direction: rows;
+    align-items: center;
+    width: 90vw;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+header a {
+    text-decoration: none;
+    color:black;
+    margin-left: 50px;
+}
+header a :hover{
+    color: rgb(255, 81, 0);
+}
+header a li {
+    font-family: "Dosis", sans-serif;
+    list-style: none;
+}
+
+/*css for home section*/
+#home {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-image: url("homepic1.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: background-image 1s ease;
+    /* display: none; */
+}
+
+#home .about .heading {
+    font-size: 4rem;
+    font-family: "Cinzel", serif;
+}
+
+#home .about .name {
+    font-size: 2rem;
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 5px;
+    font-weight: bold;
+    color: rgb(255, 81, 0);
+}
+
+#home .about {
+    margin-left: 50px;
+    margin-top: -100px;
+}
+
+#home .about .desc {
+    width: 30vw;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.blurload {
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s linear 1 forwards;
+}
+
+@keyframes showContent {
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+.blurremove {
+    transform: translateY(-50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContents 0.5s linear 1 forwards;
+}
+
+@keyframes showContents {
+    to {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(0px);
+    }
+}
+
+.slide {
+    overflow: hidden;
+    overflow-x: hidden;
+    /* display: none; */
+
+}
+
+.slide .years .item {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.673);
+}
+
+.slide .years .item .yname {
+    font-family: "Open Sans", sans-serif;
+    margin: 10px;
+    margin-top: 150px;
+    opacity: 1;
+}
+
+.slide .years {
+    display: flex;
+    flex-direction: rows;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transition: all 1s;
+}
+
+.slide .years .item:nth-child(1) {
+    left: 50%;
+    animation: widthani 1s linear 1 forwards;
+}
+
+.slide .years .item:nth-child(2) {
+    left: calc(50% + 200px);
+    animation: widthani 1.1s linear 1 forwards;
+}
+
+.slide .years .item:nth-child(3) {
+    left: calc(50% + 400px);
+    animation: widthani 1.2s linear 1 forwards;
+}
+
+@keyframes widthani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.slide .buttons {
+    position: absolute;
+    top: 70%;
+    left: calc(2 * 25px);
+}
+
+.slide .buttons .material-symbols-outlined {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(16, 16, 16, 0.532);
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slide .buttons .material-symbols-outlined:active {
+    scale: 0.9;
+    background-color: rgba(47, 47, 47, 0.532);
+}
+
+.slide .buttons .material-symbols-outlined:nth-child(2) {
+    margin-left: 5vw;
+}
+
+/* Contact us page  */
+#contact {
+    background: url('https://wallpaperaccess.com/full/3124512.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+}
+
+#contact .info {
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 0 0 10px;
+    user-select: none;
+}
+
+#contact .info h3 {
+    margin: 1.5rem 3.5rem;
+    font-family: "Josefin Sans", sans-serif;
+    color: rgb(28, 55, 89);
+}
+
+#contact .info p {
+    font-size: 0.8rem;
+    font-family: "Open Sans", sans-serif;
+    margin: 0.5rem 3.5rem;
+}
+
+#contact .info .phone {
+    margin: 1.5rem 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#contact .info .phone a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#contact .info .phone a:hover {
+    color: rgb(28, 55, 89);
+}
+
+#contact .info .email {
+    margin: 1.5rem 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#contact .info .email a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#contact .info .email a:hover {
+    color: rgb(28, 55, 89);
+}
+
+#contact .info .social {
+    margin: 1.5rem 3.5rem;
+}
+
+#contact .info .social h4 {
+    margin: 10px 0;
+    font-family: "Josefin Sans", sans-serif;
+    color: rgb(28, 55, 89);
+}
+
+#contact .info .social a {
+    margin: 5px 5px 5px 0;
+}
+
+#contact .form {
+    background-color: rgb(28, 55, 89);
+    width: 400px;
+    height: 500px;
+    border-radius: 0 10px 10px 0;
+}
+
+#contact .form:before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    margin-right: 50%;
+    transform: translate(-50%, 20px) rotate(45deg);
+    width: 25px;
+    background: rgb(28, 55, 89);
+}
+
+#contact .form h3 {
+    font-family: "Josefin Sans", sans-serif;
+    margin: 1.5rem 3.5rem;
+    color: white;
+}
+
+#contact .form form {
+    margin: 1.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .form form input,
+#contact .form form textarea {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 0 0.5rem 1rem;
+    background: none;
+    border: 2px solid white;
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-radius: 20px;
+}
+
+#contact .form form input::placeholder,
+#contact .form form textarea::placeholder {
+    color: rgb(255, 255, 252);
+}
+
+#contact .form form textarea {
+    max-width: 100%;
+    min-height: 50px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#contact .form form button {
+    width: 100px;
+    padding: 0.5rem;
+    border-radius: 25px;
+    border: 2px solid white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(28, 55, 89);
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact .form form button:hover {
+    background: none;
+    color: white;
+}
+
+#contact .form form button:active {
+    transform: scale(0.9);
+    user-select: none;
+}
+
+
+/* Projects page css code */
+#Projects {
+    width: 100vw;
+    height: calc(100vh - 50px);
+    display: flex;
+    background-color:rgb(255, 248, 244);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Projects h1 {
+    font-family: "Cinzel", serif;
+    font-size: 50px;
+}
+
+#Projects .container {
+    margin-top: 50px;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#Projects .container .card {
+    position: relative;
+    left: 0;
+    width: 3rem;
+    border-radius: 2rem;
+    height: 20rem;
+    overflow: hidden;
+    transition: 0.4s ease;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.423);
+
+}
+
+#Projects .container .card h2 {
+    opacity: 0;
+    color: white;
+    position: absolute;
+    font-family: "Dosis", sans-serif;
+    left: 20px;
+    bottom: 20px;
+}
+
+#Projects .container .card input {
+    margin-left: 50%;
+    position: absolute;
+    bottom: 10px;
+    transform: translate(-50%);
+}
+
+.card.active {
+    flex: 300px;
+    cursor: pointer;
+}
+
+.card.active h2 {
+    opacity: 1;
+}
+
+@media (max-width:600px) {
+    #Projects .container {
+        width: 80vw;
+        flex-direction: column;
+        border: 1px solid red;
+    }
+
+    #Projects .container .card {
+        position: relative;
+        top: 0;
+        height: 3rem;
+        width: auto;
+        border-radius: 2rem;
+        overflow: hidden;
+        transition: 0.4s ease;
+        box-shadow: 0 5px 12px rgba(0, 0, 0, 0.423)
+    }
+
+    .card.active {
+        flex: 150px;
+    }
+}

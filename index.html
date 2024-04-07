@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+ <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Home Page</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="homebtn">
+            <li>Home</li>
+        </a>
+        <a href="#Projects">
+            <li>Projects</li>
+        </a>
+        <a href="#contact">
+            <li>Contact</li>
+        </a>
+    </header>
+
+    <div id="home">
+        <div class="about">
+            <div class="heading">HII I AM,</div>
+            <div class="name">HARESH</div>
+            <div class="desc">An Android and Frontend Developer.</div>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="buttons">
+            <span class="material-symbols-outlined next" onclick="previous()">
+                arrow_back_ios
+            </span>
+            <span class="material-symbols-outlined prev" onclick="next()">
+                arrow_forward_ios
+            </span>
+        </div>
+        <div class="years">
+            <div class="item"
+                style="background-image: url('webdev.jpg'); background-size: cover; background-position: center;">
+                <div class="">
+                    <div class="yname">1st Year Story</div>
+                </div>
+            </div>
+
+            <div class="item"
+                style="background-image: url('androiddev.jpg'); background-size: cover; background-position: center;">
+                <div class="">
+                    <div class="yname">2nd Year Story</div>
+                </div>
+            </div>
+
+            <div class="item"
+                style="background-image: url('dsa.jpg'); background-size: cover; background-position: center;">
+                <div class="">
+                    <div class="yname">3rd Year Story</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Projects">
+        <h1>Projects</h1>
+        <div class="container">
+            <div class="card" style="background: url('https://th.bing.com/th/id/OIP.zeNPNbcmNiwHlHBapcLdBAAAAA?rs=1&pid=ImgDetMain'); background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;">
+                <h2>project 1</h2>
+
+            </div>
+            <div class="card" style="background: url('https://wallpapercave.com/wp/nsu3cSp.jpg'); background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;">
+                <h2>project 2</h2>
+
+            </div>
+            <div class="card" style="background: url('https://th.bing.com/th/id/OIP.gCvQ1vmPVJmrq1nnzM3ZHQHaEo?rs=1&pid=ImgDetMain'); background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;">
+                <h2>project 3</h2>
+
+            </div>
+            <div class="card" style="background: url('https://wallpapercave.com/wp/wp2722874.jpg'); background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;">
+                <h2>project 4</h2>
+
+            </div>
+            <div class="card" style="background: url('https://www.technocrazed.com/wp-content/uploads/2015/12/beautiful-wallpaper-download-15.jpg'); background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;">
+                <h2>project 5</h2>
+
+            </div>
+            <div class="card" style="background: url('https://www.nawpic.com/media/2020/desktop-backgrounds-nawpic-14.jpg'); background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;">
+                <h2>project 6</h2>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="contact">
+        <div class="info">
+            <h3>Get in touch</h3>
+            <p>Contact us for website making and android app making. 24/7 hour services.</p>
+            <div class="phone"><img src="icons\005-call.png" width="20px"><a href="tel:+917381876799">+91 7381876799</a>
+            </div>
+            <div class="email"><span class="material-symbols-outlined" style="font-size: 30px;">mail</span><a
+                    href="mailto:amaclass123@gmail.com">amaclass123@gmail.com</a></div>
+            <div class="social">
+                <h4>Contact with us:</h4>
+                <a href="https://github.com/Haresh79" target="_blank"><img src="icons\001-github.png" width="25px"></a>
+                <a href="https://www.linkedin.com/in/haresh-panigrahi-825939242/" target="_blank"><img
+                        src="icons\002-linkedin.png" width="25px"></a>
+                <a href="https://www.youtube.com/@AmaClass" target="_blank"><img src="icons\003-youtube.png"
+                        width="25px"></a>
+                <a href="https://www.instagram.com/the_coder_haresh/?hl=en" target="_blank"><img
+                        src="icons\004-instagram.png" width="25px"></a>
+            </div>
+        </div>
+        <div class="form">
+            <h3>Contact with us:</h3>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="E-mail">
+                <textarea placeholder="Enter your message"></textarea>
+                <button>SEND</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+    <script src="logic.js">
+    </script>
+
+</body>
+
+</html>
